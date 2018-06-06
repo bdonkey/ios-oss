@@ -5,7 +5,7 @@ SCHEME ?= $(TARGET)-$(PLATFORM)
 TARGET ?= Kickstarter-Framework
 PLATFORM ?= iOS
 RELEASE ?= beta
-IOS_VERSION ?= 11.3
+IOS_VERSION ?= 11.4
 IPHONE_NAME ?= iPhone 8
 BRANCH ?= master
 DIST_BRANCH = $(RELEASE)-dist
@@ -109,7 +109,7 @@ sync:
 	@git checkout oss $(BRANCH)
 	@git pull oss $(BRANCH)
 	@git push private $(BRANCH)
-	
+
 	@echo "private and oss remotes are now synced!"
 
 cleanup:
